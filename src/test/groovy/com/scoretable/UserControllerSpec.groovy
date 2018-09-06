@@ -11,8 +11,11 @@ class UserControllerSpec extends Specification {
         assert params != null
 
         // TODO: Populate valid properties like...
-        //params["name"] = 'someValidName'
-        assert false, "TODO: Provide a populateValidParams() implementation for this generated test suite"
+        params["firstName"] = 'Liam'
+        params["middleName"] = 'David'
+        params["lastName"] = 'Hanrahan'
+        params["userType"] = 'Scorekeeper'
+        params["gender"] = 'Male'
     }
 
     void "Test the index action returns the correct model"() {
